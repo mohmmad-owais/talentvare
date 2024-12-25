@@ -1,7 +1,9 @@
+import NavBar from "@/components/NavBar/NavBar";
+
 export default function Home() {
   return (
-    <div>
-      <h2 className="text-secodary">Hello</h2>
+    <div className="w-full px-5">
+      <NavBar />
     </div>
   );
 }
