@@ -44,7 +44,7 @@ const Sidebar = () => {
         {/* Profile details */}
 
         <h2 className="mt-3">{userDetails.name}</h2>
-        <p className="w-72 text-center">{userDetails.skills}</p>
+        <span className="w-72 text-center">{userDetails.skills}</span>
         <p className="text-secondary">{userDetails.location}</p>
       </div>
       <div className="mt-10 space-y-5 px-3">
