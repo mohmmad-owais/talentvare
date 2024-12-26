@@ -19,56 +19,62 @@ const NavBar = () => {
       <span>
         <Image src={logo} width={41} height={38.5} alt="logo" />
       </span>
+      <div className="hidden md:block">
+        <ul className="flex text-secondary justify-between gap-12">
+          <li>
+            <Link
+              href=""
+              className={`hover: ${
+                pathname === "/" && "text-primary font-semibold"
+              }`}
+            >
+              Find Jobs
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              Top Companies
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              Job Tracker
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              My Calendar
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              Documents
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              Messages
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="hover:text-primary">
+              Notifications
+            </Link>
+          </li>
+        </ul>
+      </div>
 
-      <ul className="flex text-secondary justify-between gap-12">
-        <li>
-          <Link
-            href=""
-            className={`hover: ${
-              pathname === "/" && "text-primary font-semibold"
-            }`}
-          >
-            Find Jobs
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            Top Companies
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            Job Tracker
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            My Calendar
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            Documents
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            Messages
-          </Link>
-        </li>
-        <li>
-          <Link href="" className="hover:text-primary">
-            Notifications
-          </Link>
-        </li>
-      </ul>
       <div className="flex space-x-5">
         <div className="flex items-center space-x-2">
           {" "}
-          <SearchIcon className="text-secondary " />
-          <Input placeholder="Search" className="text-secondary" />
+          <div className="hidden md:block">
+            <span className="flex items-center">
+              <SearchIcon className="text-secondary " />
+              <Input placeholder="Search" className="text-secondary" />
+            </span>
+          </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Button>Resume Builder</Button>
         </div>
         <div>
