@@ -32,6 +32,7 @@ const FindJobSection = () => {
 
   return (
     <div className="flex flex-col w-full mt-3">
+      {/* Top section */}
       <h2 className="text-2xl">
         Find your Dream Job, <span className="text-primary">Albert!</span>
       </h2>
@@ -71,15 +72,23 @@ const FindJobSection = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="text-secondary bg-gray-300 cursor-pointer">
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => handleSelectLocation("US")}>
-                US
+              <DropdownMenuItem disabled>Select Location</DropdownMenuItem>
+              <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
+                onClick={() => handleSelectLocation("US")}
+              >
+                USA
               </DropdownMenuItem>
               <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
                 onClick={() => handleSelectLocation("Pakistan")}
               >
                 Pakistan
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => handleSelectLocation("UAE")}>
+              <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
+                onClick={() => handleSelectLocation("UAE")}
+              >
                 UAE
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -109,13 +118,23 @@ const FindJobSection = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="text-secondary bg-gray-300 cursor-pointer">
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => handleSelect("Hybrid")}>
+              <DropdownMenuItem disabled>Job Type</DropdownMenuItem>
+              <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
+                onClick={() => handleSelect("Hybrid")}
+              >
                 Hybrid
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => handleSelect("On Site")}>
+              <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
+                onClick={() => handleSelect("On Site")}
+              >
                 On Site
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => handleSelect("Remote")}>
+              <DropdownMenuItem
+                className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
+                onClick={() => handleSelect("Remote")}
+              >
                 Remote
               </DropdownMenuItem>
             </DropdownMenuContent>

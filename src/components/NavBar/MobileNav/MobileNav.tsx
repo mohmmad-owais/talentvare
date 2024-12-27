@@ -27,7 +27,7 @@ const MobileNav = () => {
                 >
                   <Link
                     href=""
-                    className={`hover: ${
+                    className={` ${
                       pathname === "/" && "text-primary font-bold"
                     }`}
                   >
@@ -35,33 +35,36 @@ const MobileNav = () => {
                   </Link>
                 </li>
                 <li
-                  className="px-12 border-b-[1px] pb-3 border-gray-400"
+                  className="px-12 border-b-[1px] pb-3 border-gray-400 hover:text-primary"
                   onClick={closeMenu}
                 >
                   <Link href="">Top Companies</Link>
                 </li>
-                <li className="px-12 border-b-[1px] pb-3 border-gray-400">
+                <li className="px-12 border-b-[1px] pb-3 border-gray-400 hover:text-primary">
                   <Link href="">Job Tracker</Link>
                 </li>
                 <li
-                  className="px-12 border-b-[1px] pb-3 border-gray-400"
+                  className="px-12 border-b-[1px] pb-3 border-gray-400 hover:text-primary"
                   onClick={closeMenu}
                 >
                   <Link href="">My Calendar</Link>
                 </li>
                 <li
-                  className="px-12 border-b-[1px] pb-3 border-gray-400"
+                  className="px-12 border-b-[1px] pb-3 border-gray-400 hover:text-primary"
                   onClick={closeMenu}
                 >
                   <Link href="">Documents</Link>
                 </li>
                 <li
-                  className="px-12 border-b-[1px] pb-3 border-gray-400"
+                  className="px-12 border-b-[1px] pb-3 border-gray-400 hover:text-primary"
                   onClick={closeMenu}
                 >
                   <Link href="">Messages</Link>
                 </li>
-                <li className="px-12 pb-3 " onClick={closeMenu}>
+                <li
+                  className="px-12 pb-3 hover:text-primary"
+                  onClick={closeMenu}
+                >
                   <Link href="">Notifications</Link>
                 </li>
               </ul>

@@ -78,8 +78,9 @@ const Sidebar = () => {
           </div>
         ))}
       </div>
+
+      {/* Profile footer */}
       <div className="mt-10">
-        {/* <h2>My calendar</h2> */}
         <div className="items-center flex">
           <DropdownMenu>
             <DropdownMenuTrigger className="w-full">
@@ -104,7 +105,7 @@ const Sidebar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="text-secondary bg-gray-300 cursor-pointer w-72 ">
               <DropdownMenuSeparator />
-              <DropdownMenuItem>No interviews schedule</DropdownMenuItem>
+              <DropdownMenuItem>No interview schedule</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
