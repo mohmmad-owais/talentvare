@@ -41,19 +41,19 @@ const FindJobSection = () => {
       </p>
 
       <div className="md:flex w-full justify-between mt-8 space-y-10 md:space-y-0">
-        <div className="md:w-1/2">
+        <div className="md:w-[55%]">
           <Input
             placeholder="Job Title, Company, or Keywords"
-            className="text-secondary"
+            className="text-secondary md:text-base text-sm"
           />
         </div>
         <div className="items-center flex">
           <DropdownMenu>
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger className="w-32">
               <div className="">
                 {!isLocationOpen ? (
-                  <span className="flex ">
-                    <p>{selectedLocation}</p>
+                  <span className="flex justify-between">
+                    <p className="text-sm">{selectedLocation}</p>
                     <ChevronDown
                       onClick={() => setLocationIsOpen(!isLocationOpen)}
                       className="text-secondary ms-2"
@@ -87,11 +87,11 @@ const FindJobSection = () => {
         </div>
         <div className="items-center flex">
           <DropdownMenu>
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger className="w-32">
               <div className="">
                 {!isJobType ? (
-                  <span className="flex ">
-                    <p>{selectedValue}</p>
+                  <span className="flex justify-between">
+                    <p className="text-sm">{selectedValue}</p>
                     <ChevronDown
                       onClick={() => setJobType(!isJobType)}
                       className="text-secondary ms-2"
@@ -126,7 +126,7 @@ const FindJobSection = () => {
           Search
         </Button>
       </div>
-      <div className="flex mt-10 items-center space-x-3 text-sm text-secondary">
+      <div className="w-1/2 md:w-auto flex mt-10 md:items-center space-x-3 flex-col md:flex-row md:space-y-0 space-y-3 md:text-sm text-xs text-secondary">
         <p>Similar:</p>
         <span className="border-[1px] px-3 py-1   hover:bg-secondary hover:text-white cursor-pointer transition ease-linear  delay-100 border-secondary rounded-md">
           Frontend

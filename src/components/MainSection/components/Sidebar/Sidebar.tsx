@@ -48,7 +48,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="hidden md:block flex flex-col sticky">
+    <div className="md:flex md:flex-col  hidden">
       {/* Profile top */}
 
       <div className="flex flex-col justify-center items-center">

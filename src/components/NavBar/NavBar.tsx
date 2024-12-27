@@ -10,17 +10,21 @@ import { Input } from "@/components/ui/input";
 import logo from "@/components/assets/logo.png";
 import navUserImg from "@/components/assets/nav-pic.png";
 import { SearchIcon } from "lucide-react";
+import MobileNav from "./MobileNav/MobileNav";
 
 const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-between  p-5">
-      <span>
+    <div className="flex items-center justify-between p-5 sticky top-0 bg-white ">
+      <span className="md:w-auto w-full">
         <Image src={logo} width={41} height={38.5} alt="logo" />
       </span>
+      {/* Mobile Nav */}
+      <MobileNav />
+      {/* Main Navigation Links */}
       <div className="hidden md:block">
-        <ul className="flex text-secondary justify-between gap-10">
+        <ul className="flex text-secondary text-sm md:text-base justify-between gap-9 mr-14">
           <li>
             <Link
               href=""
@@ -64,6 +68,8 @@ const NavBar = () => {
         </ul>
       </div>
 
+      {/* Right Items  */}
+
       <div className="flex space-x-5">
         <div className="flex items-center ">
           <div className="hidden md:block">
@@ -71,17 +77,16 @@ const NavBar = () => {
               <SearchIcon className="text-secondary " />
               <Input
                 placeholder="Search"
-                className="text-secondary w-[280px]"
+                className="text-secondary w-[260px]"
               />
             </span>
           </div>
         </div>
-        <div className="hidden md:block">
-          <Button>Resume Builder</Button>
-        </div>
+        <Button className="hidden md:block">Resume Builder</Button>
+
         <div>
           {" "}
-          <span className="bg-black cursor-pointer flex items-center rounded-full ">
+          <span className="bg-black cursor-pointer md:flex items-center rounded-full hidden">
             <Image src={navUserImg} width={38} height={38} alt="logo" />
           </span>
         </div>

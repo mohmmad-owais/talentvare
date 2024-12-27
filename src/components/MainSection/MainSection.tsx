@@ -5,7 +5,7 @@ import FindJobSection from "./components/FindJobSection/FindJobSection";
 
 const MainSection = () => {
   return (
-    <div className="flex gap-10 px-5 py-10">
+    <div className="flex gap-8 px-5 py-10">
       <Sidebar />
       <FindJobSection />
     </div>
