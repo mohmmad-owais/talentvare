@@ -20,12 +20,12 @@ const NavBar = () => {
         <Image src={logo} width={41} height={38.5} alt="logo" />
       </span>
       <div className="hidden md:block">
-        <ul className="flex text-secondary justify-between gap-12">
+        <ul className="flex text-secondary justify-between gap-10">
           <li>
             <Link
               href=""
               className={`hover: ${
-                pathname === "/" && "text-primary font-semibold"
+                pathname === "/" && "text-primary font-bold"
               }`}
             >
               Find Jobs
@@ -69,7 +69,10 @@ const NavBar = () => {
           <div className="hidden md:block">
             <span className="flex items-center space-x-2">
               <SearchIcon className="text-secondary " />
-              <Input placeholder="Search" className="text-secondary" />
+              <Input
+                placeholder="Search"
+                className="text-secondary w-[280px]"
+              />
             </span>
           </div>
         </div>

@@ -38,7 +38,7 @@ const JobSection = ({ title }: JobSectionProps) => {
             <span className="flex items-center space-x-2 text-sm">
               <Clock4 size={20} className="text-secondary" />
               <p>
-                1 day ago | <span className="text-primary">22 applicants</span>
+                1 day ago | <span className="text-primary"> 22 applicants</span>
               </p>
             </span>
             <span className="flex items-center justify-between">
