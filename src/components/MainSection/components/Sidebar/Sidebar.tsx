@@ -1,15 +1,25 @@
+"use client";
 import Image from "next/image";
-
 import cover from "@/components/assets/profile-cover.png";
 import profileImg from "@/components/assets/profile-img.png";
 
+interface UserDetailsTypes {
+  name: string;
+  skills: string;
+  location: string;
+}
+
+interface Stat {
+  label: string;
+  values: string;
+}
 const Sidebar = () => {
-  const userDetails = {
+  const userDetails: UserDetailsTypes = {
     name: "Albert Flores",
     skills: "Senior Product Designer | UI/UX Designer | Graphic Designer | Web",
     location: "Clinton, Maryland",
   };
-  const stats = [
+  const stats: Stat[] = [
     {
       label: "Profile Visitors",
       values: "140",
@@ -25,7 +35,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex flex-col sticky">
+    <div className="hidden md:block flex flex-col sticky">
       {/* Profile top */}
 
       <div className="flex flex-col justify-center items-center">

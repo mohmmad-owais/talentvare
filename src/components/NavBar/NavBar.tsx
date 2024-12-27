@@ -65,10 +65,9 @@ const NavBar = () => {
       </div>
 
       <div className="flex space-x-5">
-        <div className="flex items-center space-x-2">
-          {" "}
+        <div className="flex items-center ">
           <div className="hidden md:block">
-            <span className="flex items-center">
+            <span className="flex items-center space-x-2">
               <SearchIcon className="text-secondary " />
               <Input placeholder="Search" className="text-secondary" />
             </span>

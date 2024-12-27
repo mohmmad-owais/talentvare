@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp, SearchIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import JobSection from "../JobSection/JobSection";
 
 const FindJobSection = () => {
   const [isLocationOpen, setLocationIsOpen] = useState(false);
@@ -39,8 +40,8 @@ const FindJobSection = () => {
         available today!
       </p>
 
-      <div className="flex w-full justify-between mt-8">
-        <div className="w-1/2">
+      <div className="md:flex w-full justify-between mt-8 space-y-10 md:space-y-0">
+        <div className="md:w-1/2">
           <Input
             placeholder="Job Title, Company, or Keywords"
             className="text-secondary"
@@ -68,7 +69,7 @@ const FindJobSection = () => {
                 )}
               </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="text-secondary">
+            <DropdownMenuContent className="text-secondary bg-gray-300 cursor-pointer">
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={() => handleSelectLocation("US")}>
                 US
@@ -106,7 +107,7 @@ const FindJobSection = () => {
                 )}
               </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="text-secondary">
+            <DropdownMenuContent className="text-secondary bg-gray-300 cursor-pointer">
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={() => handleSelect("Hybrid")}>
                 Hybrid
@@ -136,6 +137,11 @@ const FindJobSection = () => {
         <span className="border-[1px] px-3 py-1 hover:bg-secondary hover:text-white cursor-pointer transition  ease-linear delay-100  border-secondary rounded-md">
           Graphic Designer
         </span>
+      </div>
+      {/* Job section */}
+      <JobSection title={"Featured Jobs"} />
+      <div className="mt-10">
+        <JobSection title={"Recommended Jobs"} />
       </div>
     </div>
   );

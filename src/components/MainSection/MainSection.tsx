@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import FindJobSection from "./components/FindJobSection/FindJobSection";
