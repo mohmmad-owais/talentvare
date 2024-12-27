@@ -75,7 +75,7 @@ const FindJobSection = () => {
               <DropdownMenuItem disabled>Select Location</DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:bg-primary hover:text-white rounded-md cursor-pointer "
-                onClick={() => handleSelectLocation("US")}
+                onClick={() => handleSelectLocation("USA")}
               >
                 USA
               </DropdownMenuItem>
